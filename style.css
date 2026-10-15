@@ -1,7 +1,195 @@
 body {
+    margin: 0;
+    font-family: "Times New Roman", Times, serif;
     background-color: #1c4587;
     color: white;
 }
-#1 {
-    font-color: white;
+
+#hamburger {
+    position: fixed;
+    top: 4px;
+    left: 4px;
+    width: 26px;
+    height: 26px;
+    padding: 0;
+    font-size: 20px;
+    background: none;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
 }
+
+body.menuHidden #hamburger {
+    color: white;
+    border-color: white;
+}
+
+#side {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 195px;
+    height: 100%;
+    background-color: gold;
+    text-align: center;
+    padding-top: 45px;
+}
+
+#side a {
+    display: block;
+    color: black;
+}
+
+.cs {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+.free {
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 18px 0 30px 0;
+}
+
+.links {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 25px 4px;
+}
+
+.classes a {
+    font-size: 15px;
+    padding: 10px 8px;
+}
+
+.classes {
+    display: none;
+}
+
+.classes.open {
+    display: block;
+}
+
+.links:hover,
+.classes a:hover {
+    background-color: white;
+}
+
+body.menuHidden #side {
+    display: none;
+}
+
+#text {
+    margin-left: 195px;
+    padding: 0 0 40px 12px;
+}
+
+body.menuHidden #text {
+    margin-left: 0;
+    padding-left: 12px;
+}
+
+h1 {
+    font-size: 60px;
+    margin: 30px 0 45px 0;
+}
+
+p {
+    font-size: 30px;
+    margin: 0 0 22px 0;
+}
+
+#magnet {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 50px;
+    margin: 0 0 45px 0;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 45px 0 80px 0;
+}
+
+#slidepic {
+    width: 1000px;
+    height: 600px;
+    background-color: black;
+}
+
+.arrow {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background-color: gold;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.course {
+    margin-top: 110px;
+    position: relative;
+}
+
+.course h2 {
+    margin-bottom: 60px;
+}
+
+.course h2 a {
+    color: white;
+}
+
+.apLogo {
+    position: absolute;
+    top: 0;
+    right: 0%;
+    width: 65px;
+}
+
+#clubsOffered {
+    margin-top: 150px;
+    margin-bottom: 110px;
+}
+
+.club {
+    margin-bottom: 50px;
+}
+
+.club h2 {
+    margin-bottom: 40px;
+}
+
+.clubImages img {
+    height: 350px;
+    width: 450px;
+}
+
+#colleges {
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+#collegeGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 45px;
+    text-align: center;
+}
+
+.college img {
+    width: 90px;
+    height: 90px;
+}
+
+.college p {
+    margin: 15px 4px 0 4px;
+}
+
+
